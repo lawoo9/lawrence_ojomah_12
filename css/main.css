@@ -1,0 +1,30 @@
+h1{
+    color:blue;
+}
+
+
+.topnav{
+    position:absolute;
+    left:0;
+    right0;
+    height:100px;
+    background-color:white;
+    color:blue;
+}
+
+h3{
+    color:black;
+}
+
+p{
+    color:red;
+}
+body{
+    background-color: white;
+    color:aqua;
+    font-style: italic;
+}
+
+.topgame{
+    text-align: right;
+}
