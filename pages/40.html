@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,49 +13,242 @@
 
     
 </head>
-<body>
-<h2></h2>
-<header>
-<h3> </h3>
-</header>
-<section>
-    <nav class = "topnav">
-        <ul>
-            <li><a href ="10.html">HOME</a></li>
-            <li><a href ="10.html">LOGOUT</a></li>
-            </ul>
-            <li><a href ="60.html">Anteanatal pregnant women form</a></li>
-            <li><a href ="70.html">Congenital Pregnant Women Syphilis Form</a></li>
-            <li><a href ="80.html">Hepatitis B Pregnant Women Reporting Form</a></li>
-            <li><a href ="90.html">Referral level pregnant women form</a></li>
-            <li><a href ="100.html">Primary health care level form</a></li>
-            
-            
-            
-        
 
-    </nav>
-    <article class = "topgame">
+<style>
+
+@import url(
+'https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+ 
+        /* First make all margin and padding 0 */
+        * {
+            margin: 0px;
+            padding: 0px;
+            background-color:black;
+        }
+ 
+        /* Second work on image*/
+        header img {
+            display: block;
+            height: 84px;
+            cursor: pointer;
+            margin-right: auto;
+        }
+ 
+        /* Changes the styling of links if necessary */
+        li,
+        a,
+        button {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 800;
+            font-size: 16px;
+            color: whitesmoke;
+            text-decoration: none;
+        }
+ 
+        /* Now start positioning the links and images
+           according to your convinence */
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 10%;
+        }
+ 
+        .navigate_links {
+            list-style: none;
+        }
+ 
+        .navigate_links li {
+            display: inline-block;
+            padding: 10px 20px;
+        }
+ 
+        .navigate_links li a {
+            transition: all 0.3s ease-in-out 0s;
+        }
+ 
+        /* Add some transition to make navigation
+           bar attractive */
+        .navigate_links li a:hover {
+            color: greenyellow;
+            border: 2px solid blue;
+            box-shadow: 3px 3px 3px red, 3px 3px 3px blue;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 12px;
+        }
+ 
+        button {
+            margin-left: 70px;
+            padding: 9px 12px;
+            border-radius: 15px;
+            background-color: rgb(89, 61, 248);
+            color: rgb(243, 236, 236);
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out 0s;
+        }
+ 
+        button:hover {
+            background-color: rgb(219, 221, 81);
+            color: black;
+        }
+
+        form{
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+
+	body {
+		text-align: center;
+	}
+
+	h1 {
+		color: green;
+	}
+
+
+	.radio {
+		font-size: 30px;
+		font-weight: 500;
+		display: inline-flex;
+		align-items: center;
+		color: black;
+	}
+
+
+	.circle {
+		position: relative;
+		height: 25px;
+		width: 25px;
+		border: 5px solid #3CE75B;
+		display: inline-block;
+		right: 125px;
+		border-radius: 50%;
+	}
+
+	.circle:after {
+		content: '';
+		height: 10px;
+		width: 10px;
+		display: block;
+		position: absolute;
+		background: #3CE75B;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		opacity: 0;
+	}
+
+	.radio input:checked~.circle:after {
+		opacity: 1;
+	}
+
+    span{
+    color :red;
+    }
+
+    body{
+            background-color:white;
+    }
+
+    input{
+        width:10%;
+        padding: 12px;
+        margin: 8px;
+        border: none;
+        border-top: 3px solid blue;
+        border-bottom: 3px solid red;
+        background-color: green;
+        color: black;
+        text-align: center;
+
+    }
+
+    h1{
+        color:blueviolet;
+        text-align: center;
+    }
+h2{
+    color:red;
+    text-align: center;
+}
+
+label{
+    color:aqua;
+    text-align: center;
+}
+
+p{
+    color:brown;
+    text-align: center;
+}
+
+footer{
+    color:red;
+    text-align: center;
+}
+
+h3{
+    color:aquamarine;
+    text-align: center;
+}
+</style>
+</style>
+
+
+<body>
+<header>
+    <img class="logo"
+            src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20210401193733/geeksforgeeks.png"
+            alt="Loading image">
+
+    <nav>
+        <ul class="navigate_links">
+            <ul class="navigate_links">
+                <li><a href ="login.html">HOME</a></li>
+                <li><a href ="login.html">LOGOUT</a></li>
+                <li><a href ="60.html">Anteanatal pregnant women form</a></li>
+                <li><a href ="70.html">Congenital Pregnant Women Syphilis Form</a></li>
+                <li><a href ="80.html">Hepatitis B Pregnant Women Reporting Form</a></li>
+                <li><a href ="90.html">Referral level pregnant women form</a></li>
+                <li><a href ="100.html">Primary health care level form</a></li>
+              </ul>   
+            
+          </ul>   
+</nav>
+<a class="signin" href="#">
+            <button>Get it for free</button>
+        </a>
+</header>
+    <article>
 <h1>REGISTRATION FORM</h1>
 <form>
-    <label for ="firstname">Firstname:</label><br/>
-    <input id ="firstname" name ="firstname" type ="text"/><br/>
+   <div>
+<label for ="firstname">Firstname:</label><br/>
+    <input id ="firstname" name ="firstname" type ="text" required/><br/>
     <label for ="othername">othername:</label><br/>
-    <input id ="othername" name ="othername" type ="text"/><br/>
+    <input id ="othername" name ="othername" type ="text" required/><br/>
     <label for ="lastname">lastname:</label><br/>
-    <input id ="lastname" name ="lastname" type ="text"/><br/>
+    <input id ="lastname" name ="lastname" type ="text" required/><br/>
     <label for="uniqueid">Unique ID</label><br/>
-    <input type ="password" id ="uniqueid" name ="uniqueid"><br/>
+    <input type ="password" id ="uniqueid" name ="uniqueid" required/><br/>
     <label for="dob">Date Of Birth</label>
     <input type ="date" id ="dob" name ="dob"><br/>
-    <label><p>Sex</p></label><br/>
+    <label><p>Sex</p></label>
     <input type ="radio" name ="sex" value ="female" id ="Female">
     <label for ="Female">Female</label><br/>
     <input type ="radio" name ="sex" value ="Male" id ="Male">
     <label for ="Male">Male</label><br/>
     <input type ="radio" name ="sex" value ="intersex" id ="intersex">
-    <label for ="intersex">intersex</label><br/>
-    <label><p>Gender Identity</p></label><br/>
+   <label for ="intersex">intersex</label><br/>
+    <label>Gender Identity</label><br/>
     <input type ="radio" name ="gender identity" value ="cisgender" id ="cisgender">
     <label for ="cisgender">Cisgender</label><br/>
     <input type ="radio" name ="gender identity" value ="Gender Expression" id ="Gender Expression">
@@ -67,7 +261,7 @@
     <label for ="Gender variant">Gender Variant</label><br/>
     <input type ="radio" name ="gender identity" value ="Mx" id ="Mx">
     <label for ="Mx">Mx</label><br/>
-    <label><p>Pronouns (optional)</p></label><br/>
+    <label>Pronouns (optional)</label><br/>
     <input type ="radio" name ="pronouns (optional)" value ="She/Her/hers" id ="She/Her/hers">
     <label for ="She/Her/Hers">She/Her/hers</label><br/>
     <input type ="radio" name ="pronouns (optional)" value ="HE/Him/His" id ="HE/Him/His">
@@ -76,6 +270,9 @@
     <label for ="They/Them/Theirs">They/Them/Theirs</label><br/>
     <input type="submit" value="Submit">
     <input type="reset" value="Reset">
+     </div>
+    
+
     
     
     
@@ -93,4 +290,5 @@
 </footer>
 </body>
 </html>
+
 
