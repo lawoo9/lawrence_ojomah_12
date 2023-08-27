@@ -9,6 +9,7 @@
 <meta name = "viewport" content ="width=device-width,initial-scale=1.0">
 <title>grid view layout</title>
 <link rel ="stylesheet" href ="font-awesome/css/font-awesome.min.css">
+<script src ="../script/validatepersonalinfo.js"></script>
 <link rel ="stylesheet" type ="text/css" href ="../css/main.css">
 
     
@@ -16,8 +17,7 @@
 
 <style>
 
-@import url(
-'https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
  
         /* First make all margin and padding 0 */
         * {
@@ -199,26 +199,19 @@ h3{
     text-align: center;
 }
 </style>
-</style>
 
 
 <body>
 <header>
-    <img class="logo"
-            src=
-"https://media.geeksforgeeks.org/wp-content/uploads/20210401193733/geeksforgeeks.png"
-            alt="Loading image">
+
 
     <nav>
         <ul class="navigate_links">
             <ul class="navigate_links">
                 <li><a href ="login.html">HOME</a></li>
                 <li><a href ="login.html">LOGOUT</a></li>
-                <li><a href ="60.html">Anteanatal pregnant women form</a></li>
-                <li><a href ="70.html">Congenital Pregnant Women Syphilis Form</a></li>
-                <li><a href ="80.html">Hepatitis B Pregnant Women Reporting Form</a></li>
-                <li><a href ="90.html">Referral level pregnant women form</a></li>
-                <li><a href ="100.html">Primary health care level form</a></li>
+                <li><a href ="60.html">Next</a></li>
+                <li><a href ="login.html">Previous</a></li>
               </ul>   
             
           </ul>   
@@ -229,25 +222,25 @@ h3{
 </header>
     <article>
 <h1>REGISTRATION FORM</h1>
-<form>
+ <form method = "post" onblur="" name ="personalinfo" onsubmit="return validatepersonalinfo();" autocomplete="off">
    <div>
 <label for ="firstname">Firstname:</label><br/>
-    <input id ="firstname" name ="firstname" type ="text" required/><br/>
+    <input id ="firstname" name ="firstname" type ="text"/><span id ="firstnameErr"></span><br/>
     <label for ="othername">othername:</label><br/>
-    <input id ="othername" name ="othername" type ="text" required/><br/>
+    <input id ="othername" name ="othername" type ="text"/><span id ="othernameErr"></span><br/>
     <label for ="lastname">lastname:</label><br/>
-    <input id ="lastname" name ="lastname" type ="text" required/><br/>
+    <input id ="lastname" name ="lastname" type ="text"/><span id ="lastnameErr"></span><br/>
     <label for="uniqueid">Unique ID</label><br/>
-    <input type ="password" id ="uniqueid" name ="uniqueid" required/><br/>
+    <input type ="password" id ="uniqueid" name ="uniqueid"/><span id ="uniqueidErr"></span><br/>
     <label for="dob">Date Of Birth</label>
-    <input type ="date" id ="dob" name ="dob"><br/>
+    <input type ="date" id ="dob" name ="dob"><span id ="dobErr"></span><br/>
     <label><p>Sex</p></label>
     <input type ="radio" name ="sex" value ="female" id ="Female">
     <label for ="Female">Female</label><br/>
     <input type ="radio" name ="sex" value ="Male" id ="Male">
     <label for ="Male">Male</label><br/>
     <input type ="radio" name ="sex" value ="intersex" id ="intersex">
-   <label for ="intersex">intersex</label><br/>
+   <label for ="intersex">intersex</label><span id ="sexErr"></span><br/>
     <label>Gender Identity</label><br/>
     <input type ="radio" name ="gender identity" value ="cisgender" id ="cisgender">
     <label for ="cisgender">Cisgender</label><br/>
@@ -257,19 +250,17 @@ h3{
     <label for ="Gender fluid">Gender Fluid</label><br/>
     <input type ="radio" name ="gender identity" value ="Genderqueer" id ="Genderqueer">
     <label for ="Genderqueer">Genderqueer</label><br/>
-    <input type ="radio" name ="gender identity" value ="Gender Variant" id ="Gender Variant">
-    <label for ="Gender variant">Gender Variant</label><br/>
+    <input type ="radio" name ="gender identity" value ="Gender_Variant" id ="Gender_Variant">
+    <label for ="Gender_variant">Gender Variant</label><br/>
     <input type ="radio" name ="gender identity" value ="Mx" id ="Mx">
-    <label for ="Mx">Mx</label><br/>
+    <label for ="Mx">Mx</label><span id ="genderidentityErr"></span><br/>
     <label>Pronouns (optional)</label><br/>
     <input type ="radio" name ="pronouns (optional)" value ="She/Her/hers" id ="She/Her/hers">
     <label for ="She/Her/Hers">She/Her/hers</label><br/>
     <input type ="radio" name ="pronouns (optional)" value ="HE/Him/His" id ="HE/Him/His">
     <label for ="HE/Him/His">HE/Him/His</label><br/>
     <input type ="radio" name ="pronounns (optional)" value ="They/Them/Theirs" id ="They/Them/Theirs">
-    <label for ="They/Them/Theirs">They/Them/Theirs</label><br/>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
+    <label for ="They/Them/Theirs">They/Them/Theirs</label><span id ="pronouns(optional)Err"></span><br/>
      </div>
     
 

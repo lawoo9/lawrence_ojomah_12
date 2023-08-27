@@ -59,13 +59,62 @@ h3{
     color:aquamarine;
     text-align: center;
 }
+
+header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 10%;
+        }
+ 
+        .navigate_links {
+            list-style: none;
+        }
+ 
+        .navigate_links li {
+            display: inline-block;
+            padding: 10px 20px;
+        }
+ 
+        .navigate_links li a {
+            transition: all 0.3s ease-in-out 0s;
+        }
+ 
+        /* Add some transition to make navigation
+           bar attractive */
+        .navigate_links li a:hover {
+            color: greenyellow;
+            border: 2px solid blue;
+            box-shadow: 3px 3px 3px red, 3px 3px 3px blue;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 12px;
+        }
+
+        a{
+	text-decoration: none;
+}
+
+ 
+    
 </style>
 
-</style>
 
     
 </head>
 <body>
+    <header>
+    
+        <nav>
+            <ul class="navigate_links">
+                <ul class="navigate_links">
+                    <li><a href ="70.html">Next</a></li>
+                    <li><a href ="40.html">Previous</a></li>
+                  </ul>   
+                
+              </ul>   
+    </nav>
+    </header>
     <h1>Antenatal Pregnant Women Form</h1>
     <article>
 <form>
@@ -136,8 +185,6 @@ h3{
     <label for ="Listen to fetal heart">Listen to fetal heart</label><br/>
     </details>
     <footer>
-        <button type="submit"><a href="40.html">Previous page</a></button><br/>
-        <button type="submit"><a href="101.html">Next page</a></button><br/>
         Copyright@GRIMARD CATHOLIC HOSPITAL ANYIGBA
     </footer>
     </body>

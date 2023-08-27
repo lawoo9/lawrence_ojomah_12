@@ -59,12 +59,61 @@ h3{
     color:aquamarine;
     text-align: center;
 }
-</style>
+
+
+header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 10%;
+        }
+ 
+        .navigate_links {
+            list-style: none;
+        }
+ 
+        .navigate_links li {
+            display: inline-block;
+            padding: 10px 20px;
+        }
+ 
+        .navigate_links li a {
+            transition: all 0.3s ease-in-out 0s;
+        }
+ 
+        /* Add some transition to make navigation
+           bar attractive */
+        .navigate_links li a:hover {
+            color: greenyellow;
+            border: 2px solid blue;
+            box-shadow: 3px 3px 3px red, 3px 3px 3px blue;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 12px;
+        }
+
+        a{
+	text-decoration: none;
+}
+
+
 </style>
 
     
 </head>
 <body>
+    <header>
+    
+        <nav>
+            <ul class="navigate_links">
+                <ul class="navigate_links">
+                    <li><a href ="90.html">Next</a></li>
+                    <li><a href ="70.html">Previous</a></li>
+                  </ul>   
+                
+              </ul>   
+    </nav>
+    </header>      
 <article>
     <h1>HEPATITIS B INFECTED PREGNANT WOMAN REPORTING FORM</h1>
     <form>
@@ -189,8 +238,6 @@ h3{
 <input id =" Positive Labs Attached" name ="Positive Labs Attached" type ="text"/>  
 </details>
 <footer>
-    <button type="submit"><a href="40.html">Previous page</a></button><br/>
-        <button type="submit"><a href="101.html">Next page</a></button><br/>
         Copyright@GRIMARD CATHOLIC HOSPITAL ANYIGBA
     
 </footer>
